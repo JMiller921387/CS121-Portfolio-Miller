@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class letterCounter {
+public class LetterCounter {
     static int counter;
     public static void main(String[] args){
 
