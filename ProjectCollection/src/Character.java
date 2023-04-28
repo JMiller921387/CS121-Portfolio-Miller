@@ -17,7 +17,7 @@ public class Character {
     }
     public int collectCoin(int amount){
         coins += amount;
-        System.out.println(charName + " has "+ coins + " coins!");
+        System.out.printf("%s%n has %.2f%n coins!", charName, coins);
         return coins;
     }
 

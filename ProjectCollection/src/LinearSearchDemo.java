@@ -1,5 +1,5 @@
 public class LinearSearchDemo {
-    
+
 
     public int LinearSearch(int key, int array[]) {
         int counter = 0;
