@@ -1,8 +1,26 @@
+import java.util.Scanner;
+
 public class letterCounter {
     static int counter;
     public static void main(String[] args){
-        char testLetter = 'k';
-        count("kayak", testLetter,0);
+
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("What word would you like to search in?");
+
+        String testWord = console.nextLine();
+
+        System.out.println("What letter would you like to search for?");
+
+        //Get the answer in a string
+        String testString = console.nextLine();
+
+        //Get the first letter to that string. This converts the string to a letter.
+        //nd if they messed up by accidently adding a space, the program won't fie
+        char testLetter = testString.charAt(0);
+        count(testWord, testLetter,0);
+
+        console.close();
     }
 
     public static void count(String test, char matcher, int index) {
